@@ -27,7 +27,7 @@ jobs:
       - name: Subir artefactos (archivos del sitio)
         uses: actions/upload-pages-artifact@v2
         with:
-          path: . # Aquí la carpeta raíz de tu sitio
+          path: "." # Ruta de tu sitio; mejor especifica carpeta, ej. 'public' o 'docs'
 
       - name: Desplegar en GitHub Pages
         id: deployment
